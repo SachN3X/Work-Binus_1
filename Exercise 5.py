@@ -1,0 +1,1 @@
+Nilai A = int(input
