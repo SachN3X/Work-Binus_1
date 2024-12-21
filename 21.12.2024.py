@@ -16,8 +16,8 @@ class Student:
         
 Name = str(input("Enter your Name:"))
 Age = str(input("Enter your Age:"))
-NIK = str(input("Enter your NIK:"))
+nik = str(input("Enter your NIK:"))
 
-Student = Student(Name, Age, NIK)
+Student = Student(Name, Age, nik)
 Student.displayCount()
 Student.printStudent()
