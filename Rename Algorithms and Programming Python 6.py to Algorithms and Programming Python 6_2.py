@@ -37,7 +37,7 @@ class User:
 
 
 # Main Code
-User1 = User()
+user1 = User()
 
 while True:
     print("""===== OOP Program =====
@@ -52,25 +52,25 @@ while True:
     if Menu == 1:
         Name = input("Please enter your name: ")
         Grade = int(input("Please enter your score: "))
-        User1 = User(Name, Grade)  # Update User1 with new values
-        User1.printUser()
+        user1 = User(Name, Grade)  # Update User1 with new values
+        user1.printUser()
     elif Menu == 2:
-        User1.printUser()
-        User1.displayCount()
+        user1.printUser()
+        user1.displayCount()
     elif Menu == 3:
         userNew = str(input("What would you like to change (Name/Score):"))
         if userNew == "Name":
             userNew_name = str(input("Enter new Name:"))
-            User1.setterUser_name(userNew_name)
+            user1.setterUser_name(userNew_name)
             print("Name Updated Successfully.")
         elif userNew == "Score":
             userNew_score = int(input("Enter new Score:"))
-            User1.setterUser_Score(userNew_score)
+            user1.setterUser_Score(userNew_score)
             print("Score Updated Successfully.")
         else:
             print("Invalid Choice.")
     elif Menu == 4:
-        User1.deletedUser()
+        user1.deletedUser()
         print("Data Successfully Deleted")
     elif Menu == 5:
         print("Thank you for using my program")
